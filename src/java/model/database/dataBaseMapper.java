@@ -8,12 +8,12 @@ import model.beans.Client;
 import java.util.ArrayList;
 import java.util.List;
 
-public class DataBaseMapper {
+public class dataBaseMapper {
     private static Connection con;
 
     // Initialisation de la connexion dans un bloc statique
     static {
-        con = DatabaseConfig.getCon();
+        con = dataBaseConfig.getCon();
         if (con == null) {
             System.err.println("Échec de l'initialisation de la connexion à la base de données.");
         }
